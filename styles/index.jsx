@@ -24,13 +24,32 @@ export const Header = styled.header`
     padding-right: 16px;
 `;
 
-export const SearchBoxWrapper = css`
+export const MainLogoWrapper = styled.div`
+    display: block;
+    margin-right: 16px;
+    ${(props) => props.theme.mq.mobile} {
+        display: none;
+    }
+`;
+
+export const LeftMenuButtonWrapper = styled.div`
+    display: none;
+    ${(props) => props.theme.mq.mobile} {
+        display: block;
+    }
+`;
+
+export const SearchBoxWrapper = styled.div`
     display: block;
     max-width: 480px;
     position: relative;
     -webkit-box-flex: 1;
     flex-grow: 1;
     flex-direction: row;
+
+    ${(props) => props.theme.mq.mobile} {
+        display: none;
+    }
 `;
 
 export const SearchBoxInput = css`
@@ -56,7 +75,7 @@ export const SearchBoxInput = css`
     box-sizing: border-box;
 `;
 
-export const OptionBoxWrapper = css`
+export const OptionBoxWrapper = styled.div`
     display: flex;
     flex-direction: row;
     -webkit-box-align: center;
@@ -64,7 +83,7 @@ export const OptionBoxWrapper = css`
     box-sizing: border-box;
 `;
 
-export const OptionButtonText = css`
+export const ButtonText = styled.button`
     box-sizing: border-box;
     padding: 0px 8px;
     background-color: transparent;
@@ -91,7 +110,7 @@ export const OptionButtonText = css`
     }
 `;
 
-export const OptionButtonBorder = css`
+export const ButtonBorder = styled.button`
     width: auto;
     padding-left: 12px;
     padding-right: 12px;
@@ -121,4 +140,28 @@ export const OptionButtonBorder = css`
     &:focus {
         background: #24353a;
     }
+`;
+
+export const ButtonIcon = styled.button`
+    box-sizing: border-box;
+    padding: 0px px;
+    background-color: transparent;
+    color: rgb(153, 153, 153);
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 0 0 auto;
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    border: none;
+    border-radius: 50%;
+    transition: all 100ms ease-in 0s;
+    text-decoration: none;
 `;
