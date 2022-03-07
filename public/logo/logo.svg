@@ -52,33 +52,21 @@
     </g>
   </g>
   <g id="Group_6" data-name="Group 6" transform="translate(112.755 112.755)">
-    <g id="Ellipse_7-3" data-name="Ellipse 7" transform="translate(86.245 386.245)" fill="#fff" stroke="#fff" stroke-width="30">
+    <g id="Ellipse_7-3" data-name="Ellipse 7" transform="translate(86.245 386.245)" fill="none" stroke="#fff" stroke-width="30">
       <circle cx="150" cy="150" r="150" stroke="none"/>
       <circle cx="150" cy="150" r="135" fill="none"/>
     </g>
-    <g id="Ellipse_9-3" data-name="Ellipse 9" transform="translate(386.245 86.245)" fill="#fff" stroke="#fff" stroke-width="30">
+    <g id="Ellipse_9-3" data-name="Ellipse 9" transform="translate(386.245 86.245)" fill="none" stroke="#fff" stroke-width="30">
       <circle cx="151" cy="151" r="151" stroke="none"/>
       <circle cx="151" cy="151" r="136" fill="none"/>
     </g>
-    <g id="Ellipse_11-3" data-name="Ellipse 11" transform="translate(86.245 86.245)" fill="#fff" stroke="#fff" stroke-width="30">
+    <g id="Ellipse_11-3" data-name="Ellipse 11" transform="translate(86.245 86.245)" fill="none" stroke="#fff" stroke-width="30">
       <circle cx="150" cy="150" r="150" stroke="none"/>
       <circle cx="150" cy="150" r="135" fill="none"/>
     </g>
-    <g id="Ellipse_12-3" data-name="Ellipse 12" transform="translate(386.245 386.245)" fill="#fff" stroke="#fff" stroke-width="30">
+    <g id="Ellipse_12-3" data-name="Ellipse 12" transform="translate(386.245 386.245)" fill="none" stroke="#fff" stroke-width="30">
       <circle cx="151" cy="151" r="151" stroke="none"/>
       <circle cx="151" cy="151" r="136" fill="none"/>
     </g>
-  </g>
-  <g id="Rectangle_1009" data-name="Rectangle 1009" transform="translate(147 147)" stroke="#fff" stroke-width="30">
-    <rect width="706" height="706" stroke="none"/>
-    <rect x="15" y="15" width="676" height="676" fill="none"/>
-  </g>
-  <g id="Rectangle_1010" data-name="Rectangle 1010" transform="translate(199 199)" stroke="#fff" stroke-width="30">
-    <rect width="602" height="602" stroke="none"/>
-    <rect x="15" y="15" width="572" height="572" fill="none"/>
-  </g>
-  <g id="Rectangle_1011" data-name="Rectangle 1011" transform="translate(243 243)" stroke="#fff" stroke-width="30">
-    <rect width="514" height="514" stroke="none"/>
-    <rect x="15" y="15" width="484" height="484" fill="none"/>
   </g>
 </svg>

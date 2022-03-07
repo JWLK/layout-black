@@ -3,6 +3,9 @@ import { MQLWrap } from '@styles/mediaquery';
 
 //CSS
 import {
+    Wrapper,
+    NoneScroll,
+    Templete,
     VeticalCenter,
     Header,
     MainLogoWrapper,
@@ -13,33 +16,40 @@ import {
     OptionBoxWrapper,
     ButtonText,
     ButtonBorder,
+    ContentsBoard,
+    SideMenuWrapper,
+    SideMenuBox,
+    SideMenu_ul,
+    SideMenu_li,
 } from '@styles/index';
 
 const Main = () => {
     return (
-        <>
+        <Wrapper>
             <Header css={VeticalCenter}>
                 <MainLogoWrapper>
-                    <Link href="/">
-                        <a>
-                            <img
-                                style={{
-                                    position: 'relative',
-                                    width: '32px',
-                                    height: 'auto',
-                                    objectFit: 'cover',
-                                }}
-                                src="/logo/logo.svg"
-                            />
-                        </a>
-                    </Link>
+                    <ButtonIcon>
+                        <Link href="/">
+                            <a>
+                                <img
+                                    style={{
+                                        position: 'relative',
+                                        width: '100%',
+                                        height: 'auto',
+                                        objectFit: 'cover',
+                                    }}
+                                    src="/logo/logo.svg"
+                                />
+                            </a>
+                        </Link>
+                    </ButtonIcon>
                 </MainLogoWrapper>
                 <LeftMenuButtonWrapper>
                     <ButtonIcon>
                         <img
                             style={{
                                 position: 'relative',
-                                width: '100%',
+                                width: '80%',
                                 height: 'auto',
                                 objectFit: 'cover',
                             }}
@@ -56,7 +66,18 @@ const Main = () => {
                     <ButtonBorder>JWLK</ButtonBorder>
                 </OptionBoxWrapper>
             </Header>
-        </>
+            <ContentsBoard>
+                <SideMenuWrapper>
+                    <SideMenuBox>
+                        <ul css={SideMenu_ul}>
+                            <li css={SideMenu_li}>MENU1</li>
+                            <li css={SideMenu_li}>MENU2</li>
+                            <li css={SideMenu_li}>MENU3</li>
+                        </ul>
+                    </SideMenuBox>
+                </SideMenuWrapper>
+            </ContentsBoard>
+        </Wrapper>
     );
 };
 

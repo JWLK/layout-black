@@ -1,6 +1,12 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
+export const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+`;
+
 export const VeticalCenter = css`
     display: flex;
     flex-direction: row;
@@ -155,8 +161,8 @@ export const ButtonIcon = styled.button`
     flex: 0 0 auto;
     cursor: pointer;
     font-family: Inter, sans-serif;
-    width: 32px;
-    height: 32px;
+    width: 42px;
+    height: 42px;
     font-size: 12px;
     font-weight: 500;
     line-height: 1;
@@ -164,4 +170,48 @@ export const ButtonIcon = styled.button`
     border-radius: 50%;
     transition: all 100ms ease-in 0s;
     text-decoration: none;
+`;
+
+export const ContentsBoard = styled.div`
+    background-color: rgb(21, 21, 21);
+    color: rgb(230, 230, 230);
+    width: 100vw;
+    min-height: calc(100vh - 48px);
+`;
+
+//*Side Menu
+export const SideMenuWrapper = styled.div`
+    display:block
+    margin-right: 0px
+;`;
+
+export const SideMenuBox = styled.aside`
+    position: absolute;
+    height: calc(100% - 48px);
+    left: 0px;
+    border-right: 1px solid rgb(36, 36, 36);
+    border-top-color: rgb(36, 36, 36);
+    border-bottom-color: rgb(36, 36, 36);
+    border-left-color: rgb(36, 36, 36);
+    background-color: rgb(21, 21, 21);
+    width: 240px;
+    flex-shrink: 0;
+    z-index: 3;
+    overflow: hidden auto;
+`;
+
+export const SideMenu_ul = css`
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+`;
+
+export const SideMenu_li = css`
+    height: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+    opacity: 1;
+    color: rgb(230, 230, 230);
+    background-color: transparent;
+    transition: all 200ms ease-in 0s;
 `;
