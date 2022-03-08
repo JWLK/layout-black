@@ -6,19 +6,20 @@ import SideMenu from '@Components/SideMenu';
 //CSS
 import { Wrap, Board, Title, Contents, Section, Section_Main, Section_Side } from '@Styles/base';
 
-const Main = () => {
+const Page = () => {
     return (
         <Wrap>
             <Board>
                 <Title>
-                    <span>HOME</span>
+                    <span>Page</span>
                 </Title>
                 <Contents>
-                    <Section>This page is being prepared.</Section>
+                    <Section_Main>Main</Section_Main>
+                    <Section_Side>Side</Section_Side>
                 </Contents>
             </Board>
         </Wrap>
     );
 };
 
-export default Main;
+export default Page;
