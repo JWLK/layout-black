@@ -5,7 +5,7 @@ export default class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <title>Console</title>
+                    <title>Evonus DEMO</title>
                     <meta charSet="utf-8"></meta>
                     <body>
                         <Main />

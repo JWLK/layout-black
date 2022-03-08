@@ -165,10 +165,11 @@ export const Contents = styled.div`
 
 export const Section = styled.div`
     display: flex;
+    align-items: flex-start;
     flex-basis: 300px;
     flex-grow: 1;
     flex-direction: row;
-    border: solid 1px rgba(52, 52, 52, 0.16);
+    border: solid 1px rgba(52, 52, 52, 0);
     margin: 5px;
     padding: 30px 10px;
 `;
