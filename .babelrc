@@ -17,10 +17,10 @@
             {
                 "root": ["."],
                 "alias": {
-                    "@pages": "./pages",
-                    "@components": "./components",
-                    "@styles": "./styles",
-                    "@utils": "./utils"
+                    "@Pages": "./pages",
+                    "@Components": "./components",
+                    "@Styles": "./styles",
+                    "@Utils": "./utils"
                 }
             }
         ]
