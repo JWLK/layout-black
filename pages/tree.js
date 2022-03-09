@@ -11,7 +11,7 @@ import { VeticalCenter, Wrap, Board, Title, Contents, Section, ButtonBorder } fr
 import { TreeSection, TreeSectionDisplay, TreeSectionOption, InputData } from '@Styles/tree';
 
 const Tree = () => {
-    const [number, setNumber] = useState(5);
+    const [number, setNumber] = useState(4);
     const onChangeNumber = useCallback(
         (e) => {
             setNumber(e.target.value);

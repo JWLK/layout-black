@@ -23,7 +23,7 @@ const TreeStage = ({ number }) => {
                     <Stair
                         key={i}
                         name={'section-' + (i + 1)}
-                        position={[0, -10 + i * (25 / number), 1]}
+                        position={[0, -10 + i * 1.25 * (25 / number), 1]}
                         args={[3, 3, 25 / number]}
                     />
                 ))}
