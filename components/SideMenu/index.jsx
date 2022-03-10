@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 
 const _menu = [
     { id: '1', name: 'Home', path: '/' },
-    { id: '2', name: 'Sub', path: '/sub' },
+    { id: '2', name: 'Page', path: '/page' },
 ];
 import { SideMenuWrapper, SideMenuBox, SideMenu_ul, SideMenu_li, SideMenu_link, SideMenu_icon } from './css';
 

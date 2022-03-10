@@ -129,7 +129,7 @@ export const Board = styled.div`
     height: 100%;
 `;
 
-export const Title = styled.div`
+export const PageTitle = styled.div`
     width: calc(100% - 72px);
     max-width: 1828px;
     margin-left: auto;
@@ -154,23 +154,33 @@ export const Contents = styled.div`
     width: calc(100% - 72px);
     height: calc(100vh - 250px);
     max-width: 1828px;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-flow: row wrap;
-    align-items: stretch;
+    align-items: flex-start;
+    overflow: scroll;
 `;
 
 export const Section = styled.div`
+    width: 100%;
+    height: auto;
     display: flex;
-    flex-basis: 300px;
     flex-grow: 1;
-    flex-direction: row;
-    border: solid 1px rgb(52, 52, 52);
-    margin: 5px;
-    padding: 30px 10px;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    border: solid 1px rgba(52, 52, 52, 0.3);
+    padding: 20px 10px;
+    margin: 10px 0px;
+`;
+
+export const Column = styled.div`
+    width: ${(props) => (props.width ? props.width : 'auto')};
+    height: ${(props) => (props.height ? props.height : 'auto')};
+    border: solid 1px rgba(52, 52, 52, 1);
+    margin: 5px 5px;
 `;
 
 export const Section_Main = styled.div`
@@ -178,6 +188,7 @@ export const Section_Main = styled.div`
     flex-basis: 300px;
     flex-grow: 2;
     flex-direction: row;
+    align-items: stretch;
     border: solid 1px rgb(52, 52, 52);
     margin: 5px;
     padding: 30px 10px;
@@ -188,6 +199,7 @@ export const Section_Side = styled.div`
     flex-basis: 300px;
     flex-grow: 1;
     flex-direction: row;
+    align-items: stretch;
     border: solid 1px rgb(52, 52, 52);
     margin: 5px;
     padding: 30px 10px;

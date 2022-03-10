@@ -4,18 +4,21 @@ import Link from 'next/link';
 import SideMenu from '@Components/SideMenu';
 
 //CSS
-import { Wrap, Board, Title, Contents, Section, Section_Main, Section_Side } from '@Styles/base';
+import { Wrap, Board, PageTitle, Contents, Section, Column, Section_Main, Section_Side } from '@Styles/base';
 
 const Main = () => {
     return (
         <Wrap>
             <Board>
-                <Title>
+                <PageTitle>
                     <span>HOME</span>
-                </Title>
+                </PageTitle>
                 <Contents>
-                    <Section_Main>Main</Section_Main>
-                    <Section_Side>Side</Section_Side>
+                    <Section>
+                        <Column width={'100%'} height={'500px'}>
+                            SIETE
+                        </Column>
+                    </Section>
                 </Contents>
             </Board>
         </Wrap>
