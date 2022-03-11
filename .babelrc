@@ -20,6 +20,7 @@
                     "@Pages": "./pages",
                     "@Components": "./components",
                     "@Styles": "./styles",
+                    "@Tools": "./tools",
                     "@Utils": "./utils"
                 }
             }

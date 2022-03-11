@@ -1,7 +1,7 @@
 {
     "rooms": [
         {
-            "id": "Kitchen/Diner",
+            "id": "Body/Flange",
             "coords": [
                 { "x": 1000, "y": 1000 },
                 { "x": 4000, "y": 1000 },

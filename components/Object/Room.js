@@ -1,6 +1,10 @@
 import React, { useMemo } from 'react';
+import Wall from '@Tools/Wall';
+import Corner from '@Tools/Corner';
 
-const Room = ({ coords }) => {
+const WALL_THICKNESS = 80;
+
+const Room = ({ id, coords }) => {
     const walls = useMemo(
         () =>
             coords.map((_, i) => {
@@ -13,8 +17,14 @@ const Room = ({ coords }) => {
     return (
         <g>
             {walls.map(([a, b]) => (
-                <line x1={a.x} y1={a.y} x2={b.x} y2={b.y} stroke="white" strokeWidth={80} />
+                <Wall key={`wall-${a.x},${a.y}-${b.x},${b.y}`} corner1={a} corner2={b} thickness={WALL_THICKNESS} />
             ))}
+            {coords.map((coord) => (
+                <Corner key={`corner-${coord.x},${coord.y}`} at={coord} thickness={WALL_THICKNESS} />
+            ))}
+            <text x={coords[0].x + 100} y={coords[0].y + 240} fill="white" fontSize="230">
+                {id}
+            </text>
         </g>
     );
 };
