@@ -6,7 +6,16 @@ import Room from '@Components/Object/Room';
 import data from '@Components/Object/sample.json';
 
 //CSS
-import { Wrap, Board, PageTitle, Contents, Section, Column, Section_Main, Section_Side } from '@Styles/base';
+import {
+    Wrap,
+    Board,
+    PageTitle,
+    Contents,
+    Section,
+    Column,
+    Section_Main,
+    Section_Side,
+} from '@Styles/base';
 import { Contents_svg, Section_svg, Column_svg } from '@Styles/svg';
 
 const Floorplan = ({ data: { rooms } }) => {
@@ -24,18 +33,37 @@ const Svg = () => {
         <Wrap>
             <Board>
                 <PageTitle>
-                    <span>SVG Maker</span>
+                    <span>Object Maker</span>
                 </PageTitle>
                 <Contents_svg>
                     <Section_svg>
-                        <Column_svg width={'70%'} height={'500px'} style={{ backgroundColor: '#405CB0' }}>
-                            <svg viewBox="-1000 -1000 21000 14000">
+                        <Column_svg width={'800px'} height={'auto'}>
+                            <svg viewBox="-1000 -1000 11000 11000" fill="#fff">
                                 <Floorplan data={data} />
-                                <line x1={-1000} y1={0} x2={20000} y2={0} stroke="white" strokeWidth={10} />
-                                <line x1={0} y1={-1000} x2={0} y2={13000} stroke="white" strokeWidth={10} />
+                                <line
+                                    x1={-1000}
+                                    y1={0}
+                                    x2={10000}
+                                    y2={0}
+                                    stroke="white"
+                                    strokeWidth={30}
+                                    strokeDasharray={'100 100'}
+                                />
+                                <line
+                                    x1={0}
+                                    y1={-1000}
+                                    x2={0}
+                                    y2={11000}
+                                    stroke="white"
+                                    strokeWidth={30}
+                                    strokeDasharray={'100 100'}
+                                />
                             </svg>
                         </Column_svg>
-                        <Column_svg width={'30%'} height={'500px'}>
+                        <Column_svg
+                            width={'calc(100% - 800px)'}
+                            height={'600px'}
+                        >
                             Main 1
                         </Column_svg>
                     </Section_svg>

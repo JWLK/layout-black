@@ -28,9 +28,14 @@ export const Section_svg = styled.div`
 `;
 
 export const Column_svg = styled.div`
-    width: ${(props) => (props.width ? 'calc(' + props.width + ' - 10px)' : 'auto')};
+    width: ${(props) =>
+        props.width ? 'calc(' + props.width + ' - 10px)' : 'auto'};
     height: ${(props) => (props.height ? props.height : 'auto')};
     border: solid 1px rgba(52, 52, 52, 1);
     margin: 5px 5px;
     overflow: hidden;
+    ${(props) => props.theme.mq.mobile} {
+        margin: 5px 25px;
+        width: 100%;
+    }
 `;
