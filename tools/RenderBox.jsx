@@ -4,7 +4,7 @@ import Corner from '@Tools/Corner';
 
 const WALL_THICKNESS = 100;
 
-const Room = ({ id, coords }) => {
+const RenderLine = ({ id, coords }) => {
     const walls = useMemo(
         () =>
             coords.map((_, i) => {
@@ -31,16 +31,8 @@ const Room = ({ id, coords }) => {
                     thickness={WALL_THICKNESS}
                 />
             ))}
-            <text
-                x={coords[0].x + 200}
-                y={coords[0].y + 340}
-                fill="white"
-                fontSize="230"
-            >
-                {id}
-            </text>
         </g>
     );
 };
 
-export default Room;
+export default RenderLine;
