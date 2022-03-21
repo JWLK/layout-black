@@ -1,22 +1,49 @@
 import React, { useMemo } from 'react';
-import Wall from '@Tools/Wall';
-import Corner from '@Tools/Corner';
-import TextDistance from '@Tools/TextDistance';
+import Wall from '@Tools/WallTypeA';
+import TextDistance from '@Tools/TextDistanceTypeA';
+import Spliter from '@Tools/SpliterTypeA';
+import Corner from '@Tools/CornerTypeA';
 
-const WALL_THICKNESS = 100;
+const WALL_THICKNESS = 10;
 
-const RenderLine = ({ id, coords }) => {
+const RenderLine = ({ id, zero, draw }) => {
+    console.log(point);
+    var point = [];
+    var p1 = {},
+        p2 = {},
+        p3 = {},
+        p4 = {};
+    p1.x = zero.x - draw.top / 2;
+    p1.y = zero.y + draw.height;
+    p2.x = zero.x + draw.top / 2;
+    p2.y = zero.y + draw.height;
+    p3.x = zero.x + draw.bottom / 2;
+    p3.y = zero.y + 0;
+    p4.x = zero.x - draw.bottom / 2;
+    p4.y = zero.y + 0;
+
+    point.push(p1, p2, p3, p4);
+
     const walls = useMemo(
         () =>
-            coords.map((_, i) => {
-                const a = coords[i];
-                const b = coords[(i + 1) % coords.length];
+            point.map((_, i) => {
+                const a = point[i];
+                const b = point[(i + 1) % point.length];
                 return [a, b];
             }),
-        [coords],
+        [draw],
     );
+
     return (
         <g>
+            {/* {point.map((coord) => (
+                <Corner
+                    key={`corner-${coord.x},${coord.y}`}
+                    at={coord}
+                    thickness={WALL_THICKNESS}
+                />
+            ))} */}
+            <Spliter zero={zero} draw={draw} />
             {walls.map(([a, b]) => (
                 <Wall
                     key={`wall-${a.x},${a.y}-${b.x},${b.y}`}
@@ -25,15 +52,8 @@ const RenderLine = ({ id, coords }) => {
                     thickness={WALL_THICKNESS}
                 />
             ))}
-            {coords.map((coord) => (
-                <Corner
-                    key={`corner-${coord.x},${coord.y}`}
-                    at={coord}
-                    thickness={WALL_THICKNESS}
-                />
-            ))}
             {walls.map(([a, b]) => (
-                <TextDistance corner1={a} corner2={b} fontSize={130} />
+                <TextDistance corner1={a} corner2={b} fontSize={350} />
             ))}
         </g>
     );

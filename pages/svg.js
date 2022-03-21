@@ -6,6 +6,7 @@ import SideMenu from '@Components/SideMenu';
 //Object
 import ObjSample from '@Components/Object/ObjSample';
 import ObjectTypeA from '@Components/Object/ObjectTypeA';
+import { Object001, Object002 } from '@Components/Object/ObjectTypeA/data.json';
 
 import { ViewScale, ViewMargin, ViewSize, ViewBox } from '@Tools/AxisBase';
 import AxisX from '@Tools/AxisX';
@@ -37,31 +38,22 @@ const Svg = () => {
                     <Section_svg>
                         <Column_svg width={'800px'} height={'auto'}>
                             <svg viewBox={ViewBox} fill="#fff">
-                                <ObjectTypeA />
+                                <ObjSample Object={Object001} />
+                                {/* <ObjectTypeA Object={Object001} /> */}
                                 <AxisX />
                                 <AxisY />
                             </svg>
                         </Column_svg>
-                        <Column_svg
-                            width={'calc(100% - 800px)'}
-                            height={'600px'}
-                        >
-                            Main 1
-                        </Column_svg>
+                        <Column>Main 2</Column>
+                        <Column>Main 2</Column>
                     </Section_svg>
                     <Section_svg>
                         <Column_svg width={'800px'} height={'auto'}>
                             <svg viewBox={ViewBox} fill="#fff">
-                                <ObjSample />
+                                <ObjectTypeA Object={Object002} />
                                 <AxisX />
                                 <AxisY />
                             </svg>
-                        </Column_svg>
-                        <Column_svg
-                            width={'calc(100% - 800px)'}
-                            height={'600px'}
-                        >
-                            Main 1
                         </Column_svg>
                     </Section_svg>
 

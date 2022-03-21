@@ -9,7 +9,7 @@ const Wall = ({ corner1, corner2, thickness }) => {
                 y1={ViewScale - corner1.y}
                 x2={ViewMargin + corner2.x}
                 y2={ViewScale - corner2.y}
-                stroke="white"
+                stroke="#fff"
                 strokeWidth={thickness}
             />
             {/* <line
@@ -17,9 +17,9 @@ const Wall = ({ corner1, corner2, thickness }) => {
                 y1={ViewScale - corner1.y}
                 x2={ViewMargin + corner2.x}
                 y2={ViewScale - corner2.y}
-                stroke=" rgba(64, 92, 176, 0.9)"
+                stroke=" rgba(64, 92, 176, 1)"
                 strokeWidth={thickness / 2}
-                strokeDasharray={`${thickness * 3} ${thickness}`}
+                strokeDasharray={`${thickness * 15} ${thickness * 7}`}
             /> */}
         </g>
     );

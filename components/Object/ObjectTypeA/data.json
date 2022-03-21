@@ -1,23 +1,37 @@
 {
-    "Object": [
+    "Object001": [
         {
-            "id": "Body/ObjectSample00",
-            "coords": [
-                { "x": 0, "y": 0 },
-                { "x": 3000, "y": 4000 },
-                { "x": 5000, "y": 4000 },
-                { "x": 5000, "y": 6000 },
-                { "x": 2500, "y": 6000 }
-            ]
-        },
+            "id": "Section1",
+            "zero": { "x": 6000, "y": 1000 },
+            "draw": { "top": 5950, "bottom": 6850, "height": 20145 }
+        }
+    ],
+    "Object002": [
         {
-            "id": "Body/ObjectSample01",
-            "coords": [
-                { "x": 3000, "y": 3000 },
-                { "x": 5000, "y": 3000 },
-                { "x": 5000, "y": 1000 },
-                { "x": 3000, "y": 1000 }
-            ]
+            "id": "Section1",
+            "zero": { "x": 6000, "y": 1000 },
+            "draw": { "top": 6850, "bottom": 6850, "height": 20145 }
+        }
+    ],
+    "Object003": [
+        {
+            "id": "Section1",
+            "zero": { "x": 6000, "y": 1000 },
+            "draw": { "top": 6850, "bottom": 6850, "height": 20145 }
+        }
+    ],
+    "Object004": [
+        {
+            "id": "Section1",
+            "zero": { "x": 6000, "y": 1000 },
+            "draw": { "top": 6850, "bottom": 6850, "height": 20145 }
+        }
+    ],
+    "Object005": [
+        {
+            "id": "Section1",
+            "zero": { "x": 6000, "y": 1000 },
+            "draw": { "top": 6850, "bottom": 6850, "height": 20145 }
         }
     ]
 }

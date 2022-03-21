@@ -1,8 +1,7 @@
 import React, { useMemo } from 'react';
 import RenderTypeA from '@Tools/RenderTypeA';
-import { Object } from './data.json';
 
-const ObjectSample = () => {
+const ObjectSample = ({ Object }) => {
     return (
         <>
             {Object.map((r) => (
